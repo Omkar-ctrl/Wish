@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Happy Birthday Wishes</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            background-color: #000000;
+            margin: 0;
+            padding: 0;
+        }
+
+        h1 {
+
+            color: rgb(255, 248, 35);
+            /* Set the text color to yellow */
+            font-size: 50px;
+            /* Increase the font size */
+            text-shadow:
+                -1px -1px 0 rgb(179, 255, 37),
+                1px -1px 0 rgb(254, 8, 8),
+                -1px 1px 0 rgb(255, 106, 0),
+                1px 1px 0 rgb(255, 179, 0),
+                0px 0px 5px rgba(0, 0, 0, 0.5);
+            /* Add colorful 3D text shadow */
+            padding: 10px;
+            /* Add some padding to the text inside the shadow */
+
+
+        }
+
+
+        p {
+            color: #444;
+        }
+
+        .birthday-banner {
+            max-width: 100%;
+        }
+
+        button {
+            background-color: #007bff;
+            color: rgb(255, 255, 255);
+            font-size: 20px;
+            font-weight: bold;
+            padding: 20px;
+            border-radius: 10px;
+            cursor: pointer;
+
+            transition: background-color 0.3s ease;
+        }
+
+
+        button:hover {
+            background-color: #f8f00f;
+            color: rgb(0, 0, 0);
+
+        }
+
+        #wishme {
+            color: rgb(255, 242, 0);
+            font-size: 50px;
+            text-shadow:
+                -1px -1px 0 black,
+                1px -1px 0 black,
+                -1px 1px 0 black,
+                1px 1px 0 black;
+            /* Add a black outline */
+        }
+
+        #wishes {
+
+         color: white;
+         margin-left:  35%;
+         margin-right: 35%;
+
+        }
+        
+
+        #birthdayMessage {
+            margin-top: 20px;
+            font-size: 18px;
+        }
+
+        .birthday-gif {
+            width: 10%;
+            height: 10%;
+            margin-top: 20px;
+        }
+
+
+        #nila{
+            width: 20%;
+            height: 20%;
+        }
+
+        .birthday-banner {
+            width: 20%;
+        }
+
+        img {
+            max-width: 50%;
+            height: 10%;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Welcome Nilam </h1>
+    <button id="wishButton">Click to See What Is Special Today</button>
+
+    <div id="birthdayMessage">
+        <img class="birthday-banner" src="today.png" alt="Birthday Banner">
+
+    </div>
+
+    <script>
+        // JavaScript function to display the birthday message
+        function wishBirthday() {
+            // Assuming you want to display the images and text together
+            var message = `
+                <img class="birth" src="giphy.gif" alt="Birthday Animation">
+                <br>
+                <img class="birth" id="nila" src="nila.png" alt="Birthday Animation">
+                <br>
+                <h1 class "wish" id="wishme"> Happy  Birthday Nilam</h1>
+                <h3 class="wishes" id="wishes"> 
+                    "Hey Nilam,<br><br>
+
+Wishing you a ridiculously legal-tastic birthday! 🎉 Now that you're on your way to becoming a lawyer, you're about to enter a world where even blowing out birthday candles requires a contract negotiation.
+<br><br>
+May your journey in the legal realm be as smooth as buttered legal briefs, and may your objections always be overruled by happiness. 📜
+<br><br>
+Don't forget to celebrate your special day with a 'motion' for extra cake, a 'verdict' of joy, and a 'judgment' to dance like nobody's watching!
+<br><br>
+Here's to the coolest future lawyer in town! 🎈
+<br><br>
+Cheers to you and your bright legal future! 🥂
+<br><br>
+*Happy Birthday!"<br>
+Yours, 
+Unknown
+
+
+
+            `;
+            document.getElementById("birthdayMessage").innerHTML = message;
+        }
+
+        // Attach the function to the button's click event
+        var button = document.getElementById("wishButton");
+        button.addEventListener("click", wishBirthday);
+    </script>
+</body>
+
+</html>
